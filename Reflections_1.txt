@@ -1,0 +1,15 @@
+Lesson 1: Navigating a commit history
+--------
+  Commands:
+    - git log
+    - git checkout
+    - git clone
+    - git diff
+
+  Configuration:
+    - git config --global core.editor "'C:\Program Files (x86)\Notepad++\notepad++.exe' -n -w"
+    - alias npp="'C:\Program Files (x86)\Notepad++\notepad++.exe'"    --> add in ~/.bash_profile
+    - git config --global color.ui auto
+    - git config --global push.default upstream
+    - git config --global merge.conflictstyle diff3
+
