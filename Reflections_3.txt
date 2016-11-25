@@ -1,3 +1,38 @@
+Lesson 3: Using GitHub to collaborate
+--------
+  Create GitHub account
+  Create a new repository
+  add a remote 
+    - git remote  --> show all existing remotes
+    - git remote add <name> URL-of-GitHub-repository
+          ( git remote add origin https://github.com/NicoMaesen/Reflections.git )
+    - git remote -v  --> show remote info
+  move the local repo to GitHub
+    - git push master origin
+  get GitHub repo to local repo
+    - git pull origin master
+
+  Forking: --> Create a copy of an existing repo on GitHub
+  Clone:   --> create a copy of a GitHub repo locally
+  branch:  --> create an alternative version of the master to work on locally
+
+  Conflicting collaboration: Changes made locally and on the remote by someone else in the same file can give a conflict
+    - git fetch --> get the changes from the remote, this will create a branch locally
+    - git merge --> combine the 2 branches into one
+    - git pull --> will do a fetch and merge action
+
+  Merging changes together:
+    - git pull --> if conflicts are found, they can be found in the file <<<<<  >>>>>  ||||||
+        adapt the file and add+commit the file
+    - git push --> to sync local and remote.
+
+  merging remote changes - Fast-forward merges
+    - git fetch 
+    
+
+
+
+
 When would you want to use a remote repository rather than keeping all your work
 local?
 
