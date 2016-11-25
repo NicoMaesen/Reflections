@@ -7,7 +7,39 @@ Lesson 2: Creating and Modifying Repositories
 
   Add changes to repository:
     - git add --> adds files to the staging area (git add <filename>)
-    - 
+    - in staging area you can group files for one commit
+
+  Comparing working directory to staging area
+    - git diff --> with no arguments
+
+  Comparing staging area to committed repository
+    - git diff --staged
+
+  Reset changes in working directory and staging area to last committed state
+    - git reset --hard    --> causion: changes in staging and working dir will be lost if not committed first !!!
+             first use git diff and git diff --staged to verify changes
+
+    add only 1 file to changing area and commit to have 1 logical change.
+
+  Branches:
+    - git branch --> shows the branches (initially *master is the only branch)
+    - git branch <Name> --> creates a new branch with that name
+    - git branch --> shows all branches in that repository and marks the current one with '*'
+    - git checkout <branchname> --> set <branchname> to be the current one
+    - git checkout -b <branchname>  --> creates a new branch and sets it as current active one
+    use branches to try a new feature or a new version without changing the original version
+
+  Combining branches: Merging branches
+    - git merge master coins  --> merge 2 branches
+    commits are shown in chronological order for both branches in 1 list
+    if you want to see the differences between 2 commits --> not the parent of the other one !!!
+    - git show <commit id>  --> to show the changes on 1 commit compared to its parent
+    - git branch -d coins  --> delete the branch (label is deleted, not the commits)
+
+  Merging files:
+    conflict detection and resolving conflicts
+
+
 
 
 
